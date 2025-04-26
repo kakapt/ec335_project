@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <a href="#home" class="logo"> BoyGangX <span>Supplements</span></a>
+    <a href="MainPage.php" class="logo"> BoyGangX <span>Supplements</span></a>
 
     <div class='bx bx-menu' id="menu-icon"></div>
 

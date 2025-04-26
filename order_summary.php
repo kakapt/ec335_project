@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <a href="MainPage.html" class="logo"> BoyGangX <span>Supplements</span></a>
+            <a href="MainPage.php" class="logo"> BoyGangX <span>Supplements</span></a>
             <div class='bx bx-menu' id="menu-icon"></div>
             <ul class="navbar">
                 <li> <a href="MainPage.php">Home</a> </li>

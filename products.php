@@ -104,7 +104,7 @@
 
     <header>
 
-      <a href="MainPage.html" class="logo"> BoyGangX <span>Supplements</span></a>
+      <a href="MainPage.php" class="logo"> BoyGangX <span>Supplements</span></a>
 
 
 
