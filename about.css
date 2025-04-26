@@ -1,0 +1,494 @@
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('curl.webp') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 18rem 8% 15rem;
+}
+
+.about-hero-content h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.about-hero-content p {
+    font-size: 2.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Mission Section */
+.mission-section {
+    background: var(--snd-bg-color);
+    padding: 8rem 8% 8rem;
+}
+
+
+.mission-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    max-width: 1200px;
+    margin-top: 10rem;
+    margin-left: 20rem;
+}
+.mission-content {
+    flex: 1;
+}
+
+
+.mission-content h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+
+.mission-content2 h2 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.mission-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+.mission-content2 p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.mission-image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.mission-image2{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.mission-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.mission-image2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.mission-image2 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.mission-image:hover img {
+    transform: scale(1.05);
+}
+.mission-image2:hover img {
+    transform: scale(1.05);
+}
+
+/* Journey/Timeline Section */
+.journey-section {
+    padding: 8rem 8% 8rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 6rem auto 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--main-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--bg-color);
+    border: 4px solid var(--main-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+.year {
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    top: 12px;
+}
+
+.timeline-item:nth-child(odd) .year {
+    right: -110px;
+}
+
+.timeline-item:nth-child(even) .year {
+    left: -110px;
+}
+
+.content {
+    padding: 20px 30px;
+    background-color: var(--snd-bg-color);
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(69, 255, 202, 0.2);
+    margin-bottom: 3rem;
+    border: 1px solid rgba(69, 255, 202, 0.1);
+    transition: all 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 15px rgba(69, 255, 202, 0.3);
+}
+
+.content h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.content p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    background: var(--snd-bg-color);
+    padding: 8rem 8% 8rem;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    max-width: 1500px;
+    margin: 5rem auto 0;
+}
+
+.team-member {
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .member-image img {
+    transform: scale(1.05);
+}
+
+.team-member h3 {
+    font-size: 2.2rem;
+    margin: 2rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.team-member p {
+    color: var(--main-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0 2rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--snd-bg-color);
+    border-radius: 50%;
+    margin: 0 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: translateY(-5px);
+}
+
+.social-links a i {
+    font-size: 2rem;
+}
+
+/* Values Section */
+.values-section {
+    padding: 8rem 8% 8rem;
+}
+
+.values-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.value-card {
+    background: var(--snd-bg-color);
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.value-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    color: var(--main-color);
+    font-size: 3.5rem;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.value-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.value-card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.cta-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('joinus.jpg') center/cover no-repeat;
+    padding: 10rem 8%;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.cta-container p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-container .btn {
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .mission-container {
+        flex-direction: column;
+    }
+    
+    .mission-image {
+        order: -1;
+        margin-bottom: 3rem;
+    }
+    
+    .timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 18px;
+        right: auto;
+    }
+    
+    .timeline-item:nth-child(even)::after {
+        left: 18px;
+    }
+    
+    .timeline-item:nth-child(odd) .year {
+        right: auto;
+        left: -45px;
+    }
+    
+    .timeline-item:nth-child(even) .year {
+        left: -45px;
+    }
+    
+    .year {
+        width: 60px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-content h1 {
+        font-size: 5rem;
+    }
+    
+    .mission-content h2 {
+        font-size: 4rem;
+    }
+    
+    .cta-container h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-hero-content h1 {
+        font-size: 4rem;
+    }
+    
+    .mission-content h2 {
+        font-size: 3.5rem;
+    }
+    
+    .heading {
+        font-size: 4.5rem;
+    }
+    
+    .cta-container h2 {
+        font-size: 3.5rem;
+    }
+    
+    .value-card {
+        padding: 3rem 2rem;
+    }
+}
