@@ -7,6 +7,12 @@ schema:
 serve:
 	php -S localhost:8080
 
+os_cmd:
+	./cmd/os_command_exploit.sh
+
+pat_trv:
+	./cmd/path_trav_exploit.sh
+
 clean:
 	find -type f -name 'schema.png' -delete
 	find -type f -name '*.db' -delete
