@@ -18,5 +18,5 @@ fi
 
 echo "Order ID: $(echo $out | cut -d'|' -f1)"
 echo "Order Date: $(echo $out | cut -d'|' -f3)"
-echo "Total Amount: $(echo $out | cut -d'|' -f4)"
+echo "Total Amount: $(echo $out | cut -d'|' -f4) VND"
 echo "Status: $(echo $out | cut -d'|' -f5)"

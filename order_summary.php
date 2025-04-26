@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="products.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BoygangX WheyWeb - Order Summary (Vulnerable Demo)</title>
+        <title>BoygangX WheyWeb - Order Summary</title>
     </head>
     <body>
         <header>
@@ -24,8 +24,8 @@
                 </a>
             </div>
         </header>
-        <section>
-            <h1>Generate Order Summary (Vulnerable)</h1>
+        <section style='font-size:20px'>
+            <h1>Generate Order Summary</h1>
             <form action="order.php" method="GET">
                 <label for="order_id">Enter Order ID:</label>
                 <input type="text" id="order_id" name="order_id" placeholder="e.g., 12345">
