@@ -34,9 +34,9 @@
 
             <li> <a href="#">About</a> </li>
 
-            <li> <a href="./products.php">Products</a> </li>
+            <li> <a href="products.php">Products</a> </li>
 
-            <li> <a href="#">Review</a> </li>
+            <li> <a href="order_summary.php">Order Summary</a> </li>
 
         </ul>
 

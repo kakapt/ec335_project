@@ -1,0 +1,30 @@
+digraph DatabaseSchema {
+    rankdir=TB; // Layout direction Top to Bottom
+    ranksep=1.5; // Reduced vertical spacing between ranks (rows) of nodes.
+    nodesep=1.5; // Increased horizontal spacing between nodes within the same rank.
+    node [shape=record, style=filled, fillcolor=white, fontname="Helvetica", fontsize=10]; // Use record shape, filled nodes with white color, Helvetica font
+    edge [fontname="Helvetica", fontsize=9]; // Set font for edges (removed color)
+
+    // Define the tables as nodes (removed specific colors, using default white from global node settings)
+    users [label="{<f0> users | <f1> id : INTEGER (PK) | username : varchar | password : varchar | email : varchar | created_at : DATETIME}"];
+    categories [label="{<f0> categories | <f1> id : INTEGER (PK) | name : varchar}"];
+    products [label="{<f0> products | <f1> id : INTEGER (PK) | name : varchar | price : decimal | image : varchar | info : varchar | description : text | <f2> category_id : INTEGER (FK)}"];
+    orders [label="{<f0> orders | <f1> id : INTEGER (PK) | <f2> user_id : INTEGER (FK) | order_date : DATETIME | total_amount : decimal | status : varchar}"];
+    order_items [label="{<f0> order_items | <f1> id : INTEGER (PK) | <f2> order_id : INTEGER (FK) | <f3> product_id : INTEGER (FK) | quantity : INTEGER | price_at_purchase : decimal}"];
+
+    // Define the relationships (edges) between tables (removed color)
+    // users (1) -> orders (Many)
+    users:f1 -> orders:f2 [label="1 to M" headlabel="user_id", arrowhead=vee];
+
+    // categories (1) -> products (Many)
+    categories:f1 -> products:f2 [label="1 to M" headlabel="category_id", arrowhead=vee];
+
+    // orders (1) -> order_items (Many)
+    orders:f1 -> order_items:f2 [label="1 to M" headlabel="order_id", arrowhead=vee];
+
+    // products (1) -> order_items (Many)
+    products:f1 -> order_items:f3 [label="1 to M" headlabel="product_id", arrowhead=vee];
+
+    // Optional: Add some spacing within nodes (padding)
+    node [margin="0.2,0.1"];
+}

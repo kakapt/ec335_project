@@ -120,7 +120,7 @@
 
           <li> <a href="products.php">Products</a> </li>
 
-          <li> <a href="#">Review</a> </li>
+          <li> <a href="order_summary.php">Order Summary</a> </li>
 
       </ul>
 
@@ -196,7 +196,6 @@
 
       <div class="products-container" id="products-container">
 
-        <!-- Product items will be populated by JavaScript -->
 
         <?php require_once('connect.php') ?>
 
