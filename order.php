@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="products.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BoygangX WheyWeb - Order Summary</title>
+        <title>BoygangX WheyWeb - Order Summary (Vulnerable Demo)</title>
     </head>
     <body>
         <header>
@@ -30,12 +30,7 @@
             if (isset($_GET['order_id'])) {
                 $order_id = $_GET['order_id'];
 
-                // Use escapeshellarg() to properly escape the user input.
-                // This ensures that any metacharacters in $order_id are treated
-                // as literal characters by the shell, not as commands or separators.
-                $escaped_order_id = escapeshellarg($order_id);
-
-                $command = './cmd/generate_order_summary.sh ' . $escaped_order_id;
+                $command = './cmd/generate_order_summary.sh ' . $order_id;
 
                 // Execute the command and capture the output
                 $output = shell_exec($command);
@@ -44,7 +39,7 @@
                 if ($output === null) {
                     echo "<pre>An error occur.</pre>";
                 } else {
-                    echo "<pre style='font-size:20px'>" . htmlspecialchars($output) . "</pre>";
+                    echo "<pre>" . htmlspecialchars($output) . "</pre>";
                 }
                 echo "</div>";
 
