@@ -66,6 +66,14 @@
 
                 $command = './cmd/generate_order_summary.sh ' . $order_id;
 
+                // Use escapeshellarg() to properly escape the user input.
+                // This ensures that any metacharacters in $order_id are treated
+                // as literal characters by the shell, not as commands or separators.
+                $escaped_order_id = escapeshellarg($order_id);
+
+                $command = './cmd/generate_order_summary.sh ' . $escaped_order_id;
+
+                // Execute the command and capture the output
                 $output = shell_exec($command);
 
                 echo "<div class='bg-black border border-gray-800 p-8 rounded-lg shadow-lg text-left'>";
