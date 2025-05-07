@@ -2,7 +2,7 @@ init:
 	php db/init.php
 
 schema:
-	dot -Tpng db/schema.dot -o schema.png
+	dot -Tpng schema/schema.dot -o schema.png
 
 serve:
 	php -S localhost:8080

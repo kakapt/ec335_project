@@ -1,7 +1,7 @@
 digraph DatabaseSchema {
     rankdir=TB; // Layout direction Top to Bottom
-    ranksep=1.5; // Reduced vertical spacing between ranks (rows) of nodes.
-    nodesep=1.5; // Increased horizontal spacing between nodes within the same rank.
+    ranksep=1.4;
+    nodesep=1.4;
     node [shape=record, style=filled, fillcolor=white, fontname="Helvetica", fontsize=10]; // Use record shape, filled nodes with white color, Helvetica font
     edge [fontname="Helvetica", fontsize=9]; // Set font for edges (removed color)
 
@@ -14,17 +14,17 @@ digraph DatabaseSchema {
 
     // Define the relationships (edges) between tables (removed color)
     // users (1) -> orders (Many)
-    users:f1 -> orders:f2 [label="1 to M" headlabel="user_id", arrowhead=vee];
+    users:f1 -> orders:f2 [label="1-n"];
 
     // categories (1) -> products (Many)
-    categories:f1 -> products:f2 [label="1 to M" headlabel="category_id", arrowhead=vee];
+    categories:f1 -> products:f2 [label="1-n"];
 
     // orders (1) -> order_items (Many)
-    orders:f1 -> order_items:f2 [label="1 to M" headlabel="order_id", arrowhead=vee];
+    orders:f1 -> order_items:f2 [label="1-n"];
 
     // products (1) -> order_items (Many)
-    products:f1 -> order_items:f3 [label="1 to M" headlabel="product_id", arrowhead=vee];
+    products:f1 -> order_items:f3 [label="1-n"];
 
     // Optional: Add some spacing within nodes (padding)
-    node [margin="0.2,0.1"];
+    node [margin="0.2, 0.1"];
 }
