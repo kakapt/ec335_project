@@ -13,6 +13,9 @@ os_cmd:
 pat_trv:
 	./cmd/path_trav_exploit.sh
 
+deploy:
+	./cmd/deploy.sh
+
 clean:
 	find -type f -name 'schema.png' -delete
 	find -type f -name '*.db' -delete
