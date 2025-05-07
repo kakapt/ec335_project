@@ -23,9 +23,7 @@ if ($real_filepath !== false && strpos($real_filepath, $base_directory) === 0) {
         // Set headers for download using the SAFE real_filepath
         header('Content-Description: File Transfer');
         header('Content-Type: application/octet-stream');
-        // Use basename on the original user-supplied product_id for the download filename header
-        // This is generally safe for the header, but sanitize if displaying filename elsewhere.
-        header('Content-Disposition: attachment; filename="' . basename($product_id) . '"');
+        header('Content-Disposition: attachment; filename="' . basename($info) . '"');
         header('Expires: 0');
         header('Cache-Control: must-revalidate');
         header('Pragma: public');
