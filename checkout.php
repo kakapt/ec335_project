@@ -516,10 +516,10 @@ body {
   </head>
   <body>
     <header>
-      <a href="http://localhost/Whey/Mainpage/MainPage.php" class="logo"> BoyGangX <span>Supplements</span></a>
+      <a href="http://localhost/Whey/Mainpage/index.php" class="logo"> BoyGangX <span>Supplements</span></a>
       <div class='bx bx-menu' id="menu-icon"></div>
       <ul class="navbar">
-          <li><a href="MainPage.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="http://localhost/Whey/Products%20Page/products.php">Products</a></li>
           <li><a href="#">Review</a></li>

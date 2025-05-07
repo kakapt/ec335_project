@@ -33,7 +33,7 @@
 <body class="bg-black text-white">
     <header class="bg-black shadow-lg sticky top-0 z-50 py-4">
         <div class="container mx-auto px-4 flex items-center justify-between">
-            <a href="MainPage.php" class="text-4xl font-bold">
+            <a href="index.php" class="text-4xl font-bold">
                 BoyGangX <span class="text-primary">Supplements</span>
             </a>
 
@@ -44,7 +44,7 @@
             </div>
 
             <ul class="hidden md:flex space-x-8">
-                <li><a href="MainPage.php" class="hover:text-primary transition duration-300">Home</a></li>
+                <li><a href="index.php" class="hover:text-primary transition duration-300">Home</a></li>
                 <li><a href="about.php" class="hover:text-primary transition duration-300">About</a></li>
                 <li><a href="products.php" class="hover:text-primary transition duration-300">Products</a></li>
                 <li><a href="order_summary.php" class="text-primary font-medium">Order Summary</a></li> </ul>

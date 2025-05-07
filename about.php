@@ -75,7 +75,7 @@
       </div>
 
       <ul class="hidden md:flex space-x-8">
-        <li><a href="MainPage.php" class="hover:text-primary transition duration-300">Home</a></li>
+        <li><a href="index.php" class="hover:text-primary transition duration-300">Home</a></li>
         <li><a href="about.php" class="text-primary font-medium">About</a></li>
         <li><a href="products.php" class="hover:text-primary transition duration-300">Products</a></li>
         <li><a href="order_summary.php" class="hover:text-primary transition duration-300">Order Summary</a></li>
